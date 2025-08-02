@@ -121,10 +121,10 @@ const translations = {
     "nav.getStarted": "立即开始",
     
     // Hero Section
-    "hero.badge": "🌐 Web3 金融基础设施",
+    "hero.badge": "🌐 Web3 金融���础设施",
     "hero.title1": "连接现实世界",
     "hero.title2": "与区块链的金融基础设施",
-    "hero.description": "Realink Labs 专注于构建 RWA（现实世界资产）代币化与合规生态，通过安全、透明、合规的链上产品，帮助机构与个人用户无缝接入 Web3 世界。",
+    "hero.description": "构建 RWA 代币化基础设施，通过安全合规的解决方案连接传统金融与 Web3。",
     "hero.startTokenizing": "开始代币化",
     "hero.learnMore": "了解更多",
     
@@ -164,7 +164,7 @@ const translations = {
     
     "product.tangiblex.market.name": "TangibleX-Market",
     "product.tangiblex.market.subtitle": "RWA 二级市场",
-    "product.tangiblex.market.description": "提供链上交易与流动性、P2P 交易和机构撮合、集成价格预言机与市场数据",
+    "product.tangiblex.market.description": "提供链上交���与流动性、P2P 交易和机构撮合、集成价格预言机与市场数据",
     
     // About Section
     "about.badge": "关于 Realink Labs",
@@ -188,7 +188,7 @@ const translations = {
     "feature.userFriendly": "用户友好",
     "feature.userFriendly.desc": "直观的界面设计，让Web3入门变得简单易懂。",
     "feature.globalReach": "全球覆盖",
-    "feature.globalReach.desc": "全球合规支持，支持多司法管辖区的业务运营。",
+    "feature.globalReach.desc": "全球合规支��，支持多司法管辖区的业务运营。",
     "feature.scalable": "可扩展性",
     "feature.scalable.desc": "随业务需求增长的基础设施，支持企业规模化发展。",
     
@@ -202,7 +202,7 @@ const translations = {
     "coreFeatures.integration": "无缝集成",
     "coreFeatures.integration.desc": "易于使用的API和SDK，快速部署到现有金融系统中。",
     "coreFeatures.fast": "闪电般快速", 
-    "coreFeatures.fast.desc": "高性能区块链基础设施，支持即时交易���理。",
+    "coreFeatures.fast.desc": "高性能区块链基础设施，支持即时交易处理。",
     
     // CTA
     "cta.title": "准备好转换您的资产了吗？",
