@@ -17,60 +17,63 @@ import {
   BarChart3,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Index() {
+  const { t } = useLanguage();
+
   const products = [
     {
       icon: Cloud,
-      name: "RealinkCloud",
-      title: "一站式 RWA 发行与合规管理平台",
-      description: "资产发行与登记、投资组合与风险控制、KYC/AML 合规模块、API 接口支持机构接入",
+      name: t("product.realinkcloud.name"),
+      title: t("product.realinkcloud.subtitle"),
+      description: t("product.realinkcloud.description"),
       color: "text-crypto-blue",
     },
     {
       icon: LinkIcon,
-      name: "RealinkBridge",
-      title: "跨链资产通道",
-      description: "连接主流公链与二层网络、支持 RWA 与稳定币互通、提供资产锚定与清算服务",
+      name: t("product.realinkbridge.name"), 
+      title: t("product.realinkbridge.subtitle"),
+      description: t("product.realinkbridge.description"),
       color: "text-crypto-purple",
     },
     {
       icon: Shield,
-      name: "RealinkDID",
-      title: "去中心化身份与合规认证",
-      description: "链上去中心化身份 (DID)、可扩展的 KYC/AML 验证、跨 Realink 全生态统一身份",
+      name: t("product.realinkdid.name"),
+      title: t("product.realinkdid.subtitle"),
+      description: t("product.realinkdid.description"),
       color: "text-crypto-green",
     },
     {
       icon: Wallet,
-      name: "TangibleX-Pay-Wallet",
-      title: "多链资产钱包与支付工具",
-      description: "支持多链 RWA 资产管理、多签 & MPC 安全机制、集成链上支付与转账功能",
+      name: t("product.tangiblex.wallet.name"),
+      title: t("product.tangiblex.wallet.subtitle"),
+      description: t("product.tangiblex.wallet.description"),
       color: "text-crypto-orange",
     },
     {
       icon: TrendingUp,
-      name: "TangibleX-Market", 
-      title: "RWA 二级市场",
-      description: "提供链上交易与流动性、P2P 交易和机构撮合、集成价格预言机与市场数据",
+      name: t("product.tangiblex.market.name"), 
+      title: t("product.tangiblex.market.subtitle"),
+      description: t("product.tangiblex.market.description"),
       color: "text-neon-cyan",
     },
   ];
 
   const benefits = [
-    "监管合规的代币化解决方案",
-    "多区块链生态系统支持",
-    "机构级安全保障标准",
-    "7x24小时技术支持服务", 
-    "完整的API接口套件",
-    "实时分析仪表板系统",
+    t("benefit.compliance"),
+    t("benefit.multichain"),
+    t("benefit.security"),
+    t("benefit.support"), 
+    t("benefit.api"),
+    t("benefit.analytics"),
   ];
 
   const stats = [
-    { value: "$2.5B+", label: "已代币化资产" },
-    { value: "150+", label: "机构合作伙伴" },
-    { value: "99.9%", label: "系统可用性" },
-    { value: "50+", label: "支持的国家" },
+    { value: "$2.5B+", label: t("stats.assetsTokenized") },
+    { value: "150+", label: t("stats.institutionPartners") },
+    { value: "99.9%", label: t("stats.uptime") },
+    { value: "50+", label: t("stats.countries") },
   ];
 
   return (
@@ -89,20 +92,19 @@ export default function Index() {
         <div className="relative container mx-auto px-4 lg:px-6 py-20 lg:py-32">
           <div className="text-center max-w-5xl mx-auto">
             <Badge className="mb-6 bg-gradient-web3 text-white border-0 px-4 py-2">
-              🌐 Web3 金融基础设施
+              {t("hero.badge")}
             </Badge>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-web3 bg-clip-text text-transparent">
-                连接现实世界
+                {t("hero.title1")}
               </span>
               <br />
-              <span className="text-foreground">与区块链的金融基础设施</span>
+              <span className="text-foreground">{t("hero.title2")}</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-              Realink Labs 专注于构建 RWA（现实世界资产）代币化与合规生态，
-              通过安全、透明、合规的链上产品，帮助机构与个人用户无缝接入 Web3 世界。
+              {t("hero.description")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -110,7 +112,7 @@ export default function Index() {
                 size="lg"
                 className="bg-gradient-web3 hover:opacity-90 transition-all duration-300 px-8 py-6 text-lg animate-glow-pulse"
               >
-                开始代币化
+                {t("hero.startTokenizing")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button
@@ -118,7 +120,7 @@ export default function Index() {
                 variant="outline"
                 className="border-primary/50 hover:border-primary transition-all duration-300 px-8 py-6 text-lg"
               >
-                了解更多
+                {t("hero.learnMore")}
               </Button>
             </div>
 
@@ -144,18 +146,17 @@ export default function Index() {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-secondary text-secondary-foreground">
-              核心产品
+              {t("products.coreTitle")}
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              构建完整的
+              {t("products.coreSubtitle")}
               <span className="bg-gradient-web3 bg-clip-text text-transparent">
                 {" "}
-                RWA 生态系统
+                {t("products.coreSubtitle2")}
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              五大核心产品组成完整的RWA基础设施，从资产发行到交易流通，
-              为您提供端到端的Web3金融解决方案。
+              {t("products.coreDescription")}
             </p>
           </div>
 
@@ -196,7 +197,7 @@ export default function Index() {
           <div className="text-center">
             <Link to="/products">
               <Button className="bg-gradient-web3 hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-                查看所有产品
+                {t("products.viewAll")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -213,18 +214,17 @@ export default function Index() {
             <div className="space-y-8">
               <div>
                 <Badge className="mb-4 bg-gradient-web3 text-white border-0">
-                  关于 Realink Labs
+                  {t("about.badge")}
                 </Badge>
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                  桥接传统金融
+                  {t("about.title1")}
                   <span className="bg-gradient-web3 bg-clip-text text-transparent">
                     {" "}
-                    与数字世界
+                    {t("about.title2")}
                   </span>
                 </h2>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  我们正在构建连接现实世界资产与区块链技术的基础设施，
-                  创建一个安全、透明、合规的Web3生态系统桥梁。
+                  {t("about.description")}
                 </p>
               </div>
 
@@ -245,7 +245,7 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/about">
                   <Button className="bg-gradient-web3 hover:opacity-90 transition-opacity">
-                    了解更多
+                    {t("about.learnMoreBtn")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
@@ -254,7 +254,7 @@ export default function Index() {
                     variant="outline"
                     className="border-primary/50 hover:border-primary transition-all duration-300"
                   >
-                    联系销售
+                    {t("about.contactSales")}
                   </Button>
                 </Link>
               </div>
@@ -264,9 +264,9 @@ export default function Index() {
               <div className="grid grid-cols-2 gap-6">
                 <Card className="p-6 bg-gradient-to-br from-card to-secondary/20 border-primary/20 hover:shadow-xl hover:shadow-primary/20 transition-all duration-500 animate-slide-up">
                   <Building className="h-8 w-8 text-crypto-blue mb-4" />
-                  <h3 className="font-semibold mb-2">机构级服务</h3>
+                  <h3 className="font-semibold mb-2">{t("feature.institutional")}</h3>
                   <p className="text-sm text-muted-foreground">
-                    企业级安全性和合规性，支持大规模业务运营。
+                    {t("feature.institutional.desc")}
                   </p>
                 </Card>
 
@@ -275,9 +275,9 @@ export default function Index() {
                   style={{ animationDelay: "0.2s" }}
                 >
                   <Users className="h-8 w-8 text-crypto-purple mb-4" />
-                  <h3 className="font-semibold mb-2">用户友好</h3>
+                  <h3 className="font-semibold mb-2">{t("feature.userFriendly")}</h3>
                   <p className="text-sm text-muted-foreground">
-                    直观的界面设计，让Web3入门变得简单易懂。
+                    {t("feature.userFriendly.desc")}
                   </p>
                 </Card>
 
@@ -286,9 +286,9 @@ export default function Index() {
                   style={{ animationDelay: "0.4s" }}
                 >
                   <Network className="h-8 w-8 text-crypto-green mb-4" />
-                  <h3 className="font-semibold mb-2">全球覆盖</h3>
+                  <h3 className="font-semibold mb-2">{t("feature.globalReach")}</h3>
                   <p className="text-sm text-muted-foreground">
-                    全球合规支持，支持多司法管辖区的业务运营。
+                    {t("feature.globalReach.desc")}
                   </p>
                 </Card>
 
@@ -297,9 +297,9 @@ export default function Index() {
                   style={{ animationDelay: "0.6s" }}
                 >
                   <BarChart3 className="h-8 w-8 text-crypto-orange mb-4" />
-                  <h3 className="font-semibold mb-2">可扩展性</h3>
+                  <h3 className="font-semibold mb-2">{t("feature.scalable")}</h3>
                   <p className="text-sm text-muted-foreground">
-                    随业���需求增长的基础设施，支持企业规模化发展。
+                    {t("feature.scalable.desc")}
                   </p>
                 </Card>
               </div>
@@ -313,17 +313,17 @@ export default function Index() {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-secondary text-secondary-foreground">
-              核心优势
+              {t("coreFeatures.badge")}
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              为未来金融
+              {t("coreFeatures.title1")}
               <span className="bg-gradient-web3 bg-clip-text text-transparent">
                 {" "}
-                而构建
+                {t("coreFeatures.title2")}
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              我们的综合平台提供您在数字经济中代币化、管理和扩展现实世界资产所需的一切。
+              {t("coreFeatures.description")}
             </p>
           </div>
 
@@ -336,10 +336,10 @@ export default function Index() {
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-4 group-hover:text-primary transition-colors duration-300">
-                  监管合规优先
+                  {t("coreFeatures.compliance")}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  内置的监管合规确保您的代币化资产满足所有法律要求。
+                  {t("coreFeatures.compliance.desc")}
                 </p>
               </CardContent>
             </Card>
@@ -352,10 +352,10 @@ export default function Index() {
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-4 group-hover:text-primary transition-colors duration-300">
-                  无缝集成
+                  {t("coreFeatures.integration")}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  易于使用的API和SDK，快速部署到现有金融系统中。
+                  {t("coreFeatures.integration.desc")}
                 </p>
               </CardContent>
             </Card>
@@ -368,10 +368,10 @@ export default function Index() {
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-4 group-hover:text-primary transition-colors duration-300">
-                  闪电般快速
+                  {t("coreFeatures.fast")}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  高性能区块链基础设施，支持即时交易处理。
+                  {t("coreFeatures.fast.desc")}
                 </p>
               </CardContent>
             </Card>
@@ -384,17 +384,17 @@ export default function Index() {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4 lg:px-6 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            准备好转换您的资产了吗？
+            {t("cta.title")}
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            加入领先机构的行列，通过安全、合规的现实世界资产代币化构建金融的未来。
+            {t("cta.description")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
               className="bg-white text-primary hover:bg-white/90 transition-all duration-300 px-8 py-6 text-lg"
             >
-              立即开始
+              {t("cta.getStarted")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
@@ -402,7 +402,7 @@ export default function Index() {
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 transition-all duration-300 px-8 py-6 text-lg"
             >
-              预约演示
+              {t("cta.scheduleDemo")}
             </Button>
           </div>
         </div>
