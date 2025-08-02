@@ -65,17 +65,22 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              Connecting the real world with blockchain financial infrastructure through secure, transparent, and compliant on-chain solutions.
+              Connecting the real world with blockchain financial infrastructure
+              through secure, transparent, and compliant on-chain solutions.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.href}
                   href={social.href}
-                  target={social.href.startsWith('http') ? '_blank' : undefined}
-                  rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  target={social.href.startsWith("http") ? "_blank" : undefined}
+                  rel={
+                    social.href.startsWith("http")
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
                   className="p-2 rounded-lg bg-secondary/50 hover:bg-primary/20 text-muted-foreground hover:text-primary transition-all duration-300 hover:animate-glow-pulse"
                   aria-label={social.label}
                 >
@@ -111,13 +116,22 @@ export function Footer() {
             © 2024 Realink Labs. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
-            <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link
+              to="/privacy"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link
+              to="/terms"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               Terms of Service
             </Link>
-            <Link to="/cookies" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link
+              to="/cookies"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               Cookie Policy
             </Link>
           </div>

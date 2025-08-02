@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  defaultMode: 'dark',
+  defaultMode: "dark",
   content: ["./client/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
@@ -74,8 +74,10 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-web3': 'linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)))',
-        'gradient-cyber': 'linear-gradient(45deg, hsl(var(--crypto-purple)), hsl(var(--crypto-blue)), hsl(var(--neon-cyan)))',
+        "gradient-web3":
+          "linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)))",
+        "gradient-cyber":
+          "linear-gradient(45deg, hsl(var(--crypto-purple)), hsl(var(--crypto-blue)), hsl(var(--neon-cyan)))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -101,13 +103,14 @@ export default {
         },
         "glow-pulse": {
           "0%, 100%": {
-            boxShadow: "0 0 20px hsl(var(--crypto-purple) / 0.5)"
+            boxShadow: "0 0 20px hsl(var(--crypto-purple) / 0.5)",
           },
           "50%": {
-            boxShadow: "0 0 40px hsl(var(--crypto-purple) / 0.8), 0 0 60px hsl(var(--crypto-blue) / 0.4)"
+            boxShadow:
+              "0 0 40px hsl(var(--crypto-purple) / 0.8), 0 0 60px hsl(var(--crypto-blue) / 0.4)",
           },
         },
-        "float": {
+        float: {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
@@ -120,7 +123,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "glow-pulse": "glow-pulse 3s ease-in-out infinite",
-        "float": "float 6s ease-in-out infinite",
+        float: "float 6s ease-in-out infinite",
         "slide-up": "slide-up 0.6s ease-out",
       },
     },

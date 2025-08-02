@@ -44,7 +44,7 @@ export function Header() {
 
         {/* CTA Button */}
         <div className="hidden md:flex items-center space-x-4">
-          <Button 
+          <Button
             className="bg-gradient-web3 hover:opacity-90 transition-opacity border-0"
             size="sm"
           >
@@ -60,7 +60,11 @@ export function Header() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {isMenuOpen ? (
+            <X className="h-5 w-5" />
+          ) : (
+            <Menu className="h-5 w-5" />
+          )}
         </Button>
       </nav>
 
@@ -79,7 +83,7 @@ export function Header() {
               </Link>
             ))}
             <div className="pt-4">
-              <Button 
+              <Button
                 className="w-full bg-gradient-web3 hover:opacity-90 transition-opacity border-0"
                 onClick={() => setIsMenuOpen(false)}
               >

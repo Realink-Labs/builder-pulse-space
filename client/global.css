@@ -107,8 +107,6 @@
     @apply bg-background text-foreground;
   }
 
-
-
   /* Custom scrollbar styling for Web3 aesthetic */
   ::-webkit-scrollbar {
     width: 8px;
