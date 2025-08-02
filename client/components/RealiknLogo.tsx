@@ -58,9 +58,21 @@ export function RealiknLogo({ className = "", size = "md" }: RealiknLogoProps) {
         
         <defs>
           <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="hsl(180, 100%, 50%)" />
-            <stop offset="50%" stopColor="hsl(220, 100%, 60%)" />
-            <stop offset="100%" stopColor="hsl(263, 70%, 50%)" />
+            <stop offset="0%" stopColor="hsl(180, 100%, 50%)">
+              <animate attributeName="stop-color"
+                values="hsl(180, 100%, 50%);hsl(200, 100%, 55%);hsl(180, 100%, 50%)"
+                dur="4s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="50%" stopColor="hsl(220, 100%, 60%)">
+              <animate attributeName="stop-color"
+                values="hsl(220, 100%, 60%);hsl(240, 100%, 65%);hsl(220, 100%, 60%)"
+                dur="4s" repeatCount="indefinite"/>
+            </stop>
+            <stop offset="100%" stopColor="hsl(263, 70%, 50%)">
+              <animate attributeName="stop-color"
+                values="hsl(263, 70%, 50%);hsl(280, 75%, 55%);hsl(263, 70%, 50%)"
+                dur="4s" repeatCount="indefinite"/>
+            </stop>
           </linearGradient>
         </defs>
       </svg>
