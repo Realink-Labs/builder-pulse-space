@@ -8,11 +8,11 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/products", label: "Products" },
-    { href: "/solutions", label: "Solutions" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "首页" },
+    { href: "/products", label: "产品" },
+    { href: "/solutions", label: "解决方案" },
+    { href: "/about", label: "关于我们" },
+    { href: "/contact", label: "联系我们" },
   ];
 
   return (
