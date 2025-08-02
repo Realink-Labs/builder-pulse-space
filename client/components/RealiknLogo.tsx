@@ -6,71 +6,118 @@ interface RealiknLogoProps {
 export function RealiknLogo({ className = "", size = "md" }: RealiknLogoProps) {
   const sizeClasses = {
     sm: "h-6 w-6",
-    md: "h-8 w-8",
+    md: "h-8 w-8", 
     lg: "h-12 w-12"
   };
 
   return (
     <div className={`${sizeClasses[size]} ${className} logo-glow`}>
-      <svg
-        viewBox="0 0 100 100"
-        fill="none"
+      <svg 
+        viewBox="0 0 100 100" 
+        fill="none" 
         className="w-full h-full transition-all duration-300 hover:scale-110"
       >
-        {/* 背景圆形 */}
+        {/* Main container with smooth rounded corners */}
         <rect 
-          x="8" 
-          y="8" 
-          width="84" 
-          height="84" 
-          rx="20" 
+          x="5" 
+          y="5" 
+          width="90" 
+          height="90" 
+          rx="24" 
           fill="url(#logoGradient)"
           className="drop-shadow-lg"
         />
         
-        {/* 连接符号 - 现代化的链接图标 */}
+        {/* Web2 representation - Traditional square */}
+        <rect 
+          x="15" 
+          y="25" 
+          width="25" 
+          height="25" 
+          rx="4"
+          fill="white"
+          opacity="0.9"
+        />
+        
+        {/* Web3 representation - Hexagonal shape */}
+        <polygon 
+          points="75,20 85,30 85,45 75,55 65,45 65,30" 
+          fill="white"
+          opacity="0.9"
+        />
+        
+        {/* Smooth connection bridge - flowing curve representing RWA flow */}
         <path 
-          d="M30 35 L45 35 C52 35 57 40 57 47 C57 54 52 59 45 59 L30 59 M43 35 L58 35 C65 35 70 40 70 47 C70 54 65 59 58 59 L43 59"
+          d="M42 37.5 C50 35, 58 35, 63 37.5"
           stroke="white"
-          strokeWidth="4"
+          strokeWidth="3"
           strokeLinecap="round"
           fill="none"
-          className="animate-pulse"
-        />
+          opacity="0.9"
+        >
+          <animate attributeName="opacity" 
+            values="0.5;1;0.5" 
+            dur="2s" 
+            repeatCount="indefinite"/>
+        </path>
         
-        {/* 六边形网格图案表示区块链 */}
-        <g opacity="0.3">
-          <polygon points="25,25 35,20 45,25 45,35 35,40 25,35" fill="white" />
-          <polygon points="45,25 55,20 65,25 65,35 55,40 45,35" fill="white" />
-          <polygon points="35,40 45,35 55,40 55,50 45,55 35,50" fill="white" />
-        </g>
+        {/* Data flow particles */}
+        <circle r="2" fill="white" opacity="0.8">
+          <animateMotion dur="3s" repeatCount="indefinite">
+            <path d="M42 37.5 C50 35, 58 35, 63 37.5"/>
+          </animateMotion>
+          <animate attributeName="opacity" 
+            values="0;1;0" 
+            dur="3s" 
+            repeatCount="indefinite"/>
+        </circle>
         
-        {/* 数据流动线条 */}
+        <circle r="1.5" fill="white" opacity="0.6">
+          <animateMotion dur="3s" repeatCount="indefinite" begin="0.5s">
+            <path d="M42 37.5 C50 35, 58 35, 63 37.5"/>
+          </animateMotion>
+          <animate attributeName="opacity" 
+            values="0;1;0" 
+            dur="3s" 
+            repeatCount="indefinite" 
+            begin="0.5s"/>
+        </circle>
+        
+        {/* Bottom flow - representing asset tokenization */}
         <path 
-          d="M20 70 Q35 65 50 70 T80 70"
+          d="M25 55 C35 60, 45 60, 55 55 C65 50, 70 50, 75 55"
           stroke="white"
           strokeWidth="2"
+          strokeLinecap="round"
           fill="none"
-          opacity="0.7"
-          className="animate-pulse"
-          style={{ animationDelay: "1s" }}
-        />
+          opacity="0.6"
+          strokeDasharray="4,2"
+        >
+          <animate attributeName="stroke-dashoffset" 
+            values="0;12" 
+            dur="2s" 
+            repeatCount="indefinite"/>
+        </path>
+        
+        {/* RWA symbol - representing real world assets */}
+        <circle cx="27.5" cy="37.5" r="3" fill="rgba(255,255,255,0.4)" />
+        <circle cx="75" cy="37.5" r="3" fill="rgba(255,255,255,0.4)" />
         
         <defs>
           <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="hsl(180, 100%, 50%)">
-              <animate attributeName="stop-color"
-                values="hsl(180, 100%, 50%);hsl(200, 100%, 55%);hsl(180, 100%, 50%)"
+              <animate attributeName="stop-color" 
+                values="hsl(180, 100%, 50%);hsl(190, 100%, 55%);hsl(180, 100%, 50%)" 
                 dur="4s" repeatCount="indefinite"/>
             </stop>
-            <stop offset="50%" stopColor="hsl(220, 100%, 60%)">
-              <animate attributeName="stop-color"
-                values="hsl(220, 100%, 60%);hsl(240, 100%, 65%);hsl(220, 100%, 60%)"
+            <stop offset="50%" stopColor="hsl(200, 100%, 60%)">
+              <animate attributeName="stop-color" 
+                values="hsl(200, 100%, 60%);hsl(220, 100%, 65%);hsl(200, 100%, 60%)" 
                 dur="4s" repeatCount="indefinite"/>
             </stop>
-            <stop offset="100%" stopColor="hsl(263, 70%, 50%)">
-              <animate attributeName="stop-color"
-                values="hsl(263, 70%, 50%);hsl(280, 75%, 55%);hsl(263, 70%, 50%)"
+            <stop offset="100%" stopColor="hsl(240, 85%, 55%)">
+              <animate attributeName="stop-color" 
+                values="hsl(240, 85%, 55%);hsl(250, 90%, 60%);hsl(240, 85%, 55%)" 
                 dur="4s" repeatCount="indefinite"/>
             </stop>
           </linearGradient>
