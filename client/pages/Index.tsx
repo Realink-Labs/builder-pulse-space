@@ -28,8 +28,8 @@ export default function Index() {
       color: "text-crypto-blue",
     },
     {
-      icon: Bridge,
-      name: "RealinkBridge", 
+      icon: LinkIcon,
+      name: "RealinkBridge",
       title: "跨链资产通道",
       description: "连接主流公链与二层网络、支持 RWA 与稳定币互通、提供资产锚定与清算服务",
       color: "text-crypto-purple",
@@ -102,7 +102,7 @@ export default function Index() {
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
               Realink Labs 专注于构建 RWA（现实世界资产）代币化与合规生态，
-              通过安全、透明、合规的链上产���，帮助机构与个人用户无缝接入 Web3 世界。
+              通过安全、透明、合规的链上产品，帮助机构与个人用户无缝接入 Web3 世界。
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -277,7 +277,7 @@ export default function Index() {
                   <Users className="h-8 w-8 text-crypto-purple mb-4" />
                   <h3 className="font-semibold mb-2">用户友好</h3>
                   <p className="text-sm text-muted-foreground">
-                    直观的界面设��，让Web3入门变得简单易懂。
+                    直观的界面设计，让Web3入门变得简单易懂。
                   </p>
                 </Card>
 
@@ -299,7 +299,7 @@ export default function Index() {
                   <BarChart3 className="h-8 w-8 text-crypto-orange mb-4" />
                   <h3 className="font-semibold mb-2">可扩展性</h3>
                   <p className="text-sm text-muted-foreground">
-                    随业务需求增长的基础设施，支持企业规模化发展。
+                    随业���需求增长的基础设施，支持企业规模化发展。
                   </p>
                 </Card>
               </div>
