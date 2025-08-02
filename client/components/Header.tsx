@@ -46,13 +46,15 @@ export function Header() {
           ))}
         </div>
 
-        {/* CTA Button */}
-        <div className="hidden md:flex items-center space-x-4">
+        {/* CTA Button and Toggles */}
+        <div className="hidden md:flex items-center space-x-3">
+          <ThemeToggle />
+          <LanguageToggle />
           <Button
             className="bg-gradient-web3 hover:opacity-90 transition-opacity border-0"
             size="sm"
           >
-            Get Started
+            {t("nav.getStarted")}
           </Button>
         </div>
 
