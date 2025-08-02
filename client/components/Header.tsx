@@ -9,13 +9,14 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navItems = [
-    { href: "/", label: "首页" },
-    { href: "/products", label: "产品" },
-    { href: "/solutions", label: "解决方案" },
-    { href: "/about", label: "关于我们" },
-    { href: "/contact", label: "联系我们" },
+    { href: "/", label: t("nav.home") },
+    { href: "/products", label: t("nav.products") },
+    { href: "/solutions", label: t("nav.solutions") },
+    { href: "/about", label: t("nav.about") },
+    { href: "/contact", label: t("nav.contact") },
   ];
 
   return (
