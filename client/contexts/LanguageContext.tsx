@@ -25,7 +25,7 @@ const translations = {
     "hero.badge": "🌐 Web3 Financial Infrastructure",
     "hero.title1": "Connecting Reality",
     "hero.title2": "to Blockchain Infrastructure",
-    "hero.description": "Realink Labs specializes in building RWA (Real World Assets) tokenization and compliance ecosystems, helping institutions and individuals seamlessly access the Web3 world through secure, transparent, and compliant on-chain solutions.",
+    "hero.description": "Building RWA tokenization infrastructure that bridges traditional finance with Web3 through secure, compliant solutions.",
     "hero.startTokenizing": "Start Tokenizing",
     "hero.learnMore": "Learn More",
     
@@ -152,7 +152,7 @@ const translations = {
     
     "product.realinkbridge.name": "RealinkBridge",
     "product.realinkbridge.subtitle": "跨链资产通道", 
-    "product.realinkbridge.description": "连接主流公链与二层网络、支持 RWA 与稳定币互通、提��资产锚定与清算服务",
+    "product.realinkbridge.description": "连接主流公链与二层网络、支持 RWA 与稳定币互通、提供资产锚定与清算服务",
     
     "product.realinkdid.name": "RealinkDID",
     "product.realinkdid.subtitle": "去中心化身份与合规认证",
@@ -202,7 +202,7 @@ const translations = {
     "coreFeatures.integration": "无缝集成",
     "coreFeatures.integration.desc": "易于使用的API和SDK，快速部署到现有金融系统中。",
     "coreFeatures.fast": "闪电般快速", 
-    "coreFeatures.fast.desc": "高性能区块链基础设施，支持即时交易处理。",
+    "coreFeatures.fast.desc": "高性能区块链基础设施，支持即时交易���理。",
     
     // CTA
     "cta.title": "准备好转换您的资产了吗？",
