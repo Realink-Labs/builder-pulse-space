@@ -6,16 +6,16 @@ interface RealiknLogoProps {
 export function RealiknLogo({ className = "", size = "md" }: RealiknLogoProps) {
   const sizeClasses = {
     sm: "h-6 w-6",
-    md: "h-8 w-8", 
+    md: "h-8 w-8",
     lg: "h-12 w-12"
   };
 
   return (
-    <div className={`${sizeClasses[size]} ${className}`}>
-      <svg 
-        viewBox="0 0 100 100" 
-        fill="none" 
-        className="w-full h-full"
+    <div className={`${sizeClasses[size]} ${className} logo-glow`}>
+      <svg
+        viewBox="0 0 100 100"
+        fill="none"
+        className="w-full h-full transition-all duration-300 hover:scale-110"
       >
         {/* 背景圆形 */}
         <rect 
