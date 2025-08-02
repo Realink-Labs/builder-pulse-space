@@ -88,12 +88,19 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <div className="pt-4">
+            <div className="pt-4 space-y-4">
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-muted-foreground">Theme & Language</span>
+                <div className="flex items-center space-x-2">
+                  <ThemeToggle />
+                  <LanguageToggle />
+                </div>
+              </div>
               <Button
                 className="w-full bg-gradient-web3 hover:opacity-90 transition-opacity border-0"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Get Started
+                {t("nav.getStarted")}
               </Button>
             </div>
           </div>
