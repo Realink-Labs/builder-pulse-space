@@ -68,8 +68,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 84% 4.9%;
 
-    --primary: 263 70% 50%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 200 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96%;
     --secondary-foreground: 222 47% 11%;
@@ -81,11 +81,20 @@
     --accent-foreground: 222 47% 11%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 263 70% 50%;
+    --ring: 200 100% 50%;
+
+    /* Web3 specific colors - light mode */
+    --crypto-blue: 220 100% 50%;
+    --crypto-purple: 240 85% 45%;
+    --crypto-green: 142 76% 30%;
+    --crypto-orange: 25 95% 48%;
+    --neon-cyan: 180 100% 40%;
+    --gradient-start: 180 100% 40%;
+    --gradient-end: 220 100% 50%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5% 26%;
@@ -94,7 +103,7 @@
     --sidebar-accent: 240 5% 96%;
     --sidebar-accent-foreground: 240 6% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-ring: 200 100% 50%;
   }
 }
 
