@@ -17,107 +17,67 @@ export function RealiknLogo({ className = "", size = "md" }: RealiknLogoProps) {
         fill="none" 
         className="w-full h-full transition-all duration-300 hover:scale-110"
       >
-        {/* Main container with smooth rounded corners */}
+        {/* Outer frame */}
         <rect 
-          x="5" 
-          y="5" 
-          width="90" 
-          height="90" 
-          rx="24" 
+          x="8" 
+          y="8" 
+          width="84" 
+          height="84" 
+          rx="16" 
           fill="url(#logoGradient)"
           className="drop-shadow-lg"
         />
         
-        {/* Web2 representation - Traditional square */}
-        <rect 
-          x="15" 
-          y="25" 
-          width="25" 
-          height="25" 
-          rx="4"
-          fill="white"
-          opacity="0.9"
-        />
-        
-        {/* Web3 representation - Hexagonal shape */}
-        <polygon 
-          points="75,20 85,30 85,45 75,55 65,45 65,30" 
-          fill="white"
-          opacity="0.9"
-        />
-        
-        {/* Smooth connection bridge - flowing curve representing RWA flow */}
+        {/* Inner chain link symbol */}
         <path 
-          d="M42 37.5 C50 35, 58 35, 63 37.5"
+          d="M25 30 L45 30 C52 30 58 36 58 43 C58 50 52 56 45 56 L35 56 M42 30 L62 30 C69 30 75 36 75 43 C75 50 69 56 62 56 L42 56"
           stroke="white"
-          strokeWidth="3"
+          strokeWidth="4"
           strokeLinecap="round"
           fill="none"
-          opacity="0.9"
-        >
+          opacity="0.95"
+        />
+        
+        {/* Bottom part of the link */}
+        <path 
+          d="M35 44 L55 44 C62 44 68 50 68 57 C68 64 62 70 55 70 L25 70 C18 70 12 64 12 57 C12 50 18 44 25 44 L45 44"
+          stroke="white"
+          strokeWidth="4"
+          strokeLinecap="round"
+          fill="none"
+          opacity="0.95"
+        />
+        
+        {/* Connection accent */}
+        <circle cx="50" cy="37" r="2.5" fill="white" opacity="0.8">
           <animate attributeName="opacity" 
             values="0.5;1;0.5" 
             dur="2s" 
             repeatCount="indefinite"/>
-        </path>
-        
-        {/* Data flow particles */}
-        <circle r="2" fill="white" opacity="0.8">
-          <animateMotion dur="3s" repeatCount="indefinite">
-            <path d="M42 37.5 C50 35, 58 35, 63 37.5"/>
-          </animateMotion>
-          <animate attributeName="opacity" 
-            values="0;1;0" 
-            dur="3s" 
-            repeatCount="indefinite"/>
         </circle>
         
-        <circle r="1.5" fill="white" opacity="0.6">
-          <animateMotion dur="3s" repeatCount="indefinite" begin="0.5s">
-            <path d="M42 37.5 C50 35, 58 35, 63 37.5"/>
-          </animateMotion>
+        <circle cx="50" cy="57" r="2.5" fill="white" opacity="0.8">
           <animate attributeName="opacity" 
-            values="0;1;0" 
-            dur="3s" 
-            repeatCount="indefinite" 
-            begin="0.5s"/>
-        </circle>
-        
-        {/* Bottom flow - representing asset tokenization */}
-        <path 
-          d="M25 55 C35 60, 45 60, 55 55 C65 50, 70 50, 75 55"
-          stroke="white"
-          strokeWidth="2"
-          strokeLinecap="round"
-          fill="none"
-          opacity="0.6"
-          strokeDasharray="4,2"
-        >
-          <animate attributeName="stroke-dashoffset" 
-            values="0;12" 
+            values="1;0.5;1" 
             dur="2s" 
             repeatCount="indefinite"/>
-        </path>
-        
-        {/* RWA symbol - representing real world assets */}
-        <circle cx="27.5" cy="37.5" r="3" fill="rgba(255,255,255,0.4)" />
-        <circle cx="75" cy="37.5" r="3" fill="rgba(255,255,255,0.4)" />
+        </circle>
         
         <defs>
           <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="hsl(180, 100%, 50%)">
+            <stop offset="0%" stopColor="hsl(180, 100%, 70%)">
               <animate attributeName="stop-color" 
-                values="hsl(180, 100%, 50%);hsl(190, 100%, 55%);hsl(180, 100%, 50%)" 
+                values="hsl(180, 100%, 70%);hsl(190, 100%, 75%);hsl(180, 100%, 70%)" 
                 dur="4s" repeatCount="indefinite"/>
             </stop>
-            <stop offset="50%" stopColor="hsl(200, 100%, 60%)">
+            <stop offset="50%" stopColor="hsl(200, 100%, 65%)">
               <animate attributeName="stop-color" 
-                values="hsl(200, 100%, 60%);hsl(220, 100%, 65%);hsl(200, 100%, 60%)" 
+                values="hsl(200, 100%, 65%);hsl(210, 100%, 70%);hsl(200, 100%, 65%)" 
                 dur="4s" repeatCount="indefinite"/>
             </stop>
-            <stop offset="100%" stopColor="hsl(240, 85%, 55%)">
+            <stop offset="100%" stopColor="hsl(220, 100%, 60%)">
               <animate attributeName="stop-color" 
-                values="hsl(240, 85%, 55%);hsl(250, 90%, 60%);hsl(240, 85%, 55%)" 
+                values="hsl(220, 100%, 60%);hsl(230, 100%, 65%);hsl(220, 100%, 60%)" 
                 dur="4s" repeatCount="indefinite"/>
             </stop>
           </linearGradient>
