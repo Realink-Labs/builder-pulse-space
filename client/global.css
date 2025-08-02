@@ -39,13 +39,13 @@
 
     --radius: 0.5rem;
 
-    /* Web3 specific colors */
+    /* Web3 specific colors - matching uploaded logo */
     --crypto-blue: 220 100% 60%;
-    --crypto-purple: 263 70% 50%;
+    --crypto-purple: 240 85% 55%;
     --crypto-green: 142 76% 36%;
     --crypto-orange: 25 95% 53%;
     --neon-cyan: 180 100% 50%;
-    --gradient-start: 263 70% 50%;
+    --gradient-start: 180 100% 50%;
     --gradient-end: 220 100% 60%;
 
     --sidebar-background: 224 71% 4%;
