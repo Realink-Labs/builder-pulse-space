@@ -19,12 +19,11 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <nav className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2 group">
-          <div className="relative">
-            <Globe className="h-8 w-8 text-primary group-hover:animate-glow-pulse transition-all duration-300" />
-            <div className="absolute inset-0 bg-gradient-web3 rounded-full opacity-20 group-hover:opacity-40 transition-opacity"></div>
+        <Link to="/" className="flex items-center space-x-3 group">
+          <div className="relative group-hover:scale-110 transition-transform duration-300">
+            <RealiknLogo className="group-hover:animate-glow-pulse" />
           </div>
-          <span className="text-xl font-bold bg-gradient-web3 bg-clip-text text-transparent">
+          <span className="text-xl font-bold bg-gradient-web3 bg-clip-text text-transparent group-hover:text-primary transition-all duration-300">
             Realink Labs
           </span>
         </Link>
