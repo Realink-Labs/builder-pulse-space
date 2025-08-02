@@ -36,7 +36,7 @@ export default function Products() {
       features: [
         "资产发行与登记",
         "投资组合与风险控制", 
-        "KYC/AML 合规��块",
+        "KYC/AML 合规模块",
         "API 接口支持机构接入"
       ],
       benefits: [
@@ -47,11 +47,11 @@ export default function Products() {
       ]
     },
     {
-      id: "realinkbridge", 
+      id: "realinkbridge",
       name: "RealinkBridge",
       subtitle: "跨链资产通道",
       description: "连接传统金融与区块链世界，实现RWA资产的无缝跨链流通和价值传递。",
-      icon: Bridge,
+      icon: LinkIcon,
       color: "text-crypto-purple",
       bgGradient: "from-crypto-purple/10 to-neon-cyan/10",
       features: [
@@ -174,7 +174,7 @@ export default function Products() {
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               五大核心产品
               <span className="bg-gradient-web3 bg-clip-text text-transparent">
-                {" "}完整���态
+                {" "}完整生态
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
