@@ -29,28 +29,30 @@ export default function Products() {
       id: "realinkcloud",
       name: "RealinkCloud",
       subtitle: "一站式 RWA 发行与合规管理平台",
-      description: "为机构提供完整的RWA资产发行、管理和合规解决方案，支持全流程数字化操作。",
+      description:
+        "为机构提供完整的RWA资产发行、管理和合规解决方案，支持全流程数字化操作。",
       icon: Cloud,
       color: "text-crypto-blue",
       bgGradient: "from-crypto-blue/10 to-crypto-purple/10",
       features: [
         "资产发行与登记",
-        "投资组合与风险控制", 
+        "投资组合与风险控制",
         "KYC/AML 合规模块",
-        "API 接口支持机构接入"
+        "API 接口支持机构接入",
       ],
       benefits: [
         "降低发行成本70%",
         "提升合规效率5倍",
         "支持50+资产类型",
-        "99.9%系统可用性"
-      ]
+        "99.9%系统可用性",
+      ],
     },
     {
       id: "realinkbridge",
       name: "RealinkBridge",
       subtitle: "跨链资产通道",
-      description: "连接传统金融与区块链世界，实现RWA资产的无缝跨链流通和价值传递。",
+      description:
+        "连接传统金融与区块链世界，实现RWA资产的无缝跨链流通和价值传递。",
       icon: LinkIcon,
       color: "text-crypto-purple",
       bgGradient: "from-crypto-purple/10 to-neon-cyan/10",
@@ -58,20 +60,21 @@ export default function Products() {
         "连接主流公链与二层网络",
         "支持 RWA 与稳定币互通",
         "提供资产锚定与清算服务",
-        "实时跨链状态监控"
+        "实时跨链状态监控",
       ],
       benefits: [
         "支持15+主流区块链",
         "跨链手续费最低0.1%",
-        "平均跨链时间<5分钟", 
-        "资产安全保障100%"
-      ]
+        "平均跨链时间<5分钟",
+        "资产安全保障100%",
+      ],
     },
     {
       id: "realinkdid",
-      name: "RealinkDID", 
+      name: "RealinkDID",
       subtitle: "去中心化身份与合规认证",
-      description: "基于区块链的去中心化身份系统，提供可信的KYC/AML验证和跨生态身份管理。",
+      description:
+        "基于区块链的去中心化身份系统，提供可信的KYC/AML验证和跨生态身份管理。",
       icon: Shield,
       color: "text-crypto-green",
       bgGradient: "from-crypto-green/10 to-crypto-blue/10",
@@ -79,20 +82,21 @@ export default function Products() {
         "链上去中心化身份 (DID)",
         "可扩展的 KYC/AML 验证",
         "跨 Realink 全生态统一身份",
-        "隐私保护身份验证"
+        "隐私保护身份验证",
       ],
       benefits: [
         "验证时间从3天缩短到5分钟",
         "隐私数据零泄露风险",
         "支持200+国家地区合规",
-        "身份可信度99.8%"
-      ]
+        "身份可信度99.8%",
+      ],
     },
     {
       id: "tangiblex-pay-wallet",
       name: "TangibleX-Pay-Wallet",
-      subtitle: "多链资产钱包与支付工具", 
-      description: "企业级多链数字资产钱包，支持RWA资产管理、多签安全和便捷支付功能。",
+      subtitle: "多链资产钱包与支付工具",
+      description:
+        "企业级多链数字资产钱包，支持RWA资产管理、多签安全和便捷支付功能。",
       icon: Wallet,
       color: "text-crypto-orange",
       bgGradient: "from-crypto-orange/10 to-crypto-purple/10",
@@ -100,36 +104,37 @@ export default function Products() {
         "支持多链 RWA 资产管理",
         "多签 & MPC 安全机制",
         "集成链上支付与转账功能",
-        "企业级账户管理"
+        "企业级账户管理",
       ],
       benefits: [
         "管理20+链的数字资产",
         "军用级加密安全标准",
         "支付成功率99.95%",
-        "API调用响应<100ms"
-      ]
+        "API调用响应<100ms",
+      ],
     },
     {
       id: "tangiblex-market",
       name: "TangibleX-Market",
       subtitle: "RWA 二级市场",
-      description: "专业的RWA资产交易平台，提供流动性支持、价格发现和机构级撮合服务。",
+      description:
+        "专业的RWA资产交易平台，提供流动性支持、价格发现和机构级撮合服务。",
       icon: TrendingUp,
-      color: "text-neon-cyan", 
+      color: "text-neon-cyan",
       bgGradient: "from-neon-cyan/10 to-crypto-green/10",
       features: [
         "提供链上交易与流动性",
         "P2P 交易和机构撮合",
         "集成价格预言机与市场数据",
-        "���能合约自动结算"
+        "���能合约自动结算",
       ],
       benefits: [
         "日交易量突破$50M",
         "流动性深度行业领先",
         "交易手续费低至0.05%",
-        "24/7不间断交易服务"
-      ]
-    }
+        "24/7不间断交易服务",
+      ],
+    },
   ];
 
   return (
@@ -139,7 +144,7 @@ export default function Products() {
         <div className="absolute inset-0 bg-gradient-cyber opacity-10"></div>
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-          <div 
+          <div
             className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-crypto-blue/10 rounded-full blur-3xl animate-float"
             style={{ animationDelay: "2s" }}
           ></div>
@@ -174,7 +179,8 @@ export default function Products() {
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               五大核心产品
               <span className="bg-gradient-web3 bg-clip-text text-transparent">
-                {" "}完整生态
+                {" "}
+                完整生态
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -187,15 +193,19 @@ export default function Products() {
               <Card
                 key={product.id}
                 className={`group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 border-border/50 hover:border-primary/50 bg-gradient-to-br ${product.bgGradient} backdrop-blur-sm ${
-                  index === products.length - 1 && products.length % 2 !== 0 
-                    ? "lg:col-span-2 lg:max-w-2xl lg:mx-auto" 
+                  index === products.length - 1 && products.length % 2 !== 0
+                    ? "lg:col-span-2 lg:max-w-2xl lg:mx-auto"
                     : ""
                 }`}
               >
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className={`inline-flex p-3 rounded-xl bg-secondary/50 group-hover:bg-primary/10 transition-colors duration-300`}>
-                      <product.icon className={`h-8 w-8 ${product.color} group-hover:animate-glow-pulse transition-all duration-300`} />
+                    <div
+                      className={`inline-flex p-3 rounded-xl bg-secondary/50 group-hover:bg-primary/10 transition-colors duration-300`}
+                    >
+                      <product.icon
+                        className={`h-8 w-8 ${product.color} group-hover:animate-glow-pulse transition-all duration-300`}
+                      />
                     </div>
                     <div>
                       <CardTitle className="text-2xl group-hover:text-primary transition-colors duration-300">
@@ -213,22 +223,32 @@ export default function Products() {
 
                 <CardContent className="space-y-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-foreground">核心功能</h4>
+                    <h4 className="font-semibold mb-3 text-foreground">
+                      核心功能
+                    </h4>
                     <div className="space-y-2">
                       {product.features.map((feature, idx) => (
                         <div key={idx} className="flex items-center space-x-2">
                           <CheckCircle className="h-4 w-4 text-crypto-green" />
-                          <span className="text-sm text-muted-foreground">{feature}</span>
+                          <span className="text-sm text-muted-foreground">
+                            {feature}
+                          </span>
                         </div>
                       ))}
                     </div>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold mb-3 text-foreground">核心优势</h4>
+                    <h4 className="font-semibold mb-3 text-foreground">
+                      核心优势
+                    </h4>
                     <div className="grid grid-cols-2 gap-2">
                       {product.benefits.map((benefit, idx) => (
-                        <Badge key={idx} variant="secondary" className="justify-start text-xs">
+                        <Badge
+                          key={idx}
+                          variant="secondary"
+                          className="justify-start text-xs"
+                        >
                           {benefit}
                         </Badge>
                       ))}
@@ -251,7 +271,7 @@ export default function Products() {
       {/* Integration Section */}
       <section className="py-20 lg:py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-crypto-blue/5"></div>
-        
+
         <div className="relative container mx-auto px-4 lg:px-6">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-gradient-web3 text-white border-0">
@@ -260,7 +280,8 @@ export default function Products() {
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               产品间无缝
               <span className="bg-gradient-web3 bg-clip-text text-transparent">
-                {" "}集成协作
+                {" "}
+                集成协作
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

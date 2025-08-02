@@ -32,7 +32,7 @@ export default function Index() {
     },
     {
       icon: LinkIcon,
-      name: t("product.realinkbridge.name"), 
+      name: t("product.realinkbridge.name"),
       title: t("product.realinkbridge.subtitle"),
       description: t("product.realinkbridge.description"),
       color: "text-crypto-purple",
@@ -53,7 +53,7 @@ export default function Index() {
     },
     {
       icon: TrendingUp,
-      name: t("product.tangiblex.market.name"), 
+      name: t("product.tangiblex.market.name"),
       title: t("product.tangiblex.market.subtitle"),
       description: t("product.tangiblex.market.description"),
       color: "text-neon-cyan",
@@ -64,7 +64,7 @@ export default function Index() {
     t("benefit.compliance"),
     t("benefit.multichain"),
     t("benefit.security"),
-    t("benefit.support"), 
+    t("benefit.support"),
     t("benefit.api"),
     t("benefit.analytics"),
   ];
@@ -264,7 +264,9 @@ export default function Index() {
               <div className="grid grid-cols-2 gap-6">
                 <Card className="p-6 bg-gradient-to-br from-card to-secondary/20 border-primary/20 hover:shadow-xl hover:shadow-primary/20 transition-all duration-500 animate-slide-up">
                   <Building className="h-8 w-8 text-crypto-blue mb-4" />
-                  <h3 className="font-semibold mb-2">{t("feature.institutional")}</h3>
+                  <h3 className="font-semibold mb-2">
+                    {t("feature.institutional")}
+                  </h3>
                   <p className="text-sm text-muted-foreground">
                     {t("feature.institutional.desc")}
                   </p>
@@ -275,7 +277,9 @@ export default function Index() {
                   style={{ animationDelay: "0.2s" }}
                 >
                   <Users className="h-8 w-8 text-crypto-purple mb-4" />
-                  <h3 className="font-semibold mb-2">{t("feature.userFriendly")}</h3>
+                  <h3 className="font-semibold mb-2">
+                    {t("feature.userFriendly")}
+                  </h3>
                   <p className="text-sm text-muted-foreground">
                     {t("feature.userFriendly.desc")}
                   </p>
@@ -286,7 +290,9 @@ export default function Index() {
                   style={{ animationDelay: "0.4s" }}
                 >
                   <Network className="h-8 w-8 text-crypto-green mb-4" />
-                  <h3 className="font-semibold mb-2">{t("feature.globalReach")}</h3>
+                  <h3 className="font-semibold mb-2">
+                    {t("feature.globalReach")}
+                  </h3>
                   <p className="text-sm text-muted-foreground">
                     {t("feature.globalReach.desc")}
                   </p>
@@ -297,7 +303,9 @@ export default function Index() {
                   style={{ animationDelay: "0.6s" }}
                 >
                   <BarChart3 className="h-8 w-8 text-crypto-orange mb-4" />
-                  <h3 className="font-semibold mb-2">{t("feature.scalable")}</h3>
+                  <h3 className="font-semibold mb-2">
+                    {t("feature.scalable")}
+                  </h3>
                   <p className="text-sm text-muted-foreground">
                     {t("feature.scalable.desc")}
                   </p>

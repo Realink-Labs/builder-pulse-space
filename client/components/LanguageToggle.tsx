@@ -14,9 +14,9 @@ export function LanguageToggle() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button 
-          variant="ghost" 
-          size="sm" 
+        <Button
+          variant="ghost"
+          size="sm"
           className="h-9 w-9 px-0 hover:bg-secondary transition-colors"
           aria-label="Switch language"
         >
@@ -24,13 +24,13 @@ export function LanguageToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-[100px]">
-        <DropdownMenuItem 
+        <DropdownMenuItem
           onClick={() => setLanguage("en")}
           className={language === "en" ? "bg-secondary" : ""}
         >
           🇺🇸 English
         </DropdownMenuItem>
-        <DropdownMenuItem 
+        <DropdownMenuItem
           onClick={() => setLanguage("zh")}
           className={language === "zh" ? "bg-secondary" : ""}
         >

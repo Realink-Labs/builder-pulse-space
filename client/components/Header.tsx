@@ -90,7 +90,9 @@ export function Header() {
             ))}
             <div className="pt-4 space-y-4">
               <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Theme & Language</span>
+                <span className="text-sm text-muted-foreground">
+                  Theme & Language
+                </span>
                 <div className="flex items-center space-x-2">
                   <ThemeToggle />
                   <LanguageToggle />

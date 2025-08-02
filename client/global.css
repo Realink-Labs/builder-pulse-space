@@ -144,11 +144,14 @@
   }
 
   @keyframes logo-glow {
-    0%, 100% {
-      filter: drop-shadow(0 0 10px hsl(var(--neon-cyan) / 0.3)) drop-shadow(0 0 20px hsl(var(--crypto-blue) / 0.2));
+    0%,
+    100% {
+      filter: drop-shadow(0 0 10px hsl(var(--neon-cyan) / 0.3))
+        drop-shadow(0 0 20px hsl(var(--crypto-blue) / 0.2));
     }
     50% {
-      filter: drop-shadow(0 0 20px hsl(var(--neon-cyan) / 0.6)) drop-shadow(0 0 30px hsl(var(--crypto-blue) / 0.4));
+      filter: drop-shadow(0 0 20px hsl(var(--neon-cyan) / 0.6))
+        drop-shadow(0 0 30px hsl(var(--crypto-blue) / 0.4));
     }
   }
 }
