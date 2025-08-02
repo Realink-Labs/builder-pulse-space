@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   Cloud,
-  Bridge,
+  Link as LinkIcon,
   Shield,
   Wallet,
   TrendingUp,
@@ -36,7 +36,7 @@ export default function Products() {
       features: [
         "资产发行与登记",
         "投资组合与风险控制", 
-        "KYC/AML 合规模块",
+        "KYC/AML 合规��块",
         "API 接口支持机构接入"
       ],
       benefits: [
@@ -174,7 +174,7 @@ export default function Products() {
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               五大核心产品
               <span className="bg-gradient-web3 bg-clip-text text-transparent">
-                {" "}完整生态
+                {" "}完整���态
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
