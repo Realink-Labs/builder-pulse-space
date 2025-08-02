@@ -9,7 +9,7 @@ import {
   Users,
   TrendingUp,
   Cloud,
-  Bridge,
+  Link as LinkIcon,
   Wallet,
   Zap,
   Lock,
@@ -102,7 +102,7 @@ export default function Index() {
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
               Realink Labs 专注于构建 RWA（现实世界资产）代币化与合规生态，
-              通过安全、透明、合规的链上产品，帮助机构与个人用户无缝接入 Web3 世界。
+              通过安全、透明、合规的链上产���，帮助机构与个人用户无缝接入 Web3 世界。
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -277,7 +277,7 @@ export default function Index() {
                   <Users className="h-8 w-8 text-crypto-purple mb-4" />
                   <h3 className="font-semibold mb-2">用户友好</h3>
                   <p className="text-sm text-muted-foreground">
-                    直观的界面设计，让Web3入门变得简单易懂。
+                    直观的界面设��，让Web3入门变得简单易懂。
                   </p>
                 </Card>
 
