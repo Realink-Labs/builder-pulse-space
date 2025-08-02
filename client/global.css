@@ -107,9 +107,7 @@
     @apply bg-background text-foreground;
   }
 
-  html {
-    @apply dark;
-  }
+
 
   /* Custom scrollbar styling for Web3 aesthetic */
   ::-webkit-scrollbar {
